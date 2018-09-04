@@ -1,0 +1,26 @@
+
+{{range .Restaurants}}
+{{$y := .Name}}
+{{$y}}'s Menu
+{{range .Menu}}
+{{.MealName}}
+    {{if .Appetizers}}
+    Appetizers
+    {{range .Appetizers}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+    {{if .Entrees}}
+    Entrees
+    {{range .Entrees}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+    {{if .Drinks}}
+    Drinks
+    {{range .Drinks}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+{{end}}
+{{end}}
