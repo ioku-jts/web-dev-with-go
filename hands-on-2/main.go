@@ -22,7 +22,7 @@ func init() {
 
 func main() {
 	h := Hotel{
-		Name:    "Sex Lair",
+		Name:    "Lair",
 		Address: "123 Blah St",
 		City:    "Blooptown",
 		Zip:     12345,

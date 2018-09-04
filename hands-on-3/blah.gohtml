@@ -1,0 +1,23 @@
+
+Josh's Menu
+{{range .}}
+{{.MealName}}
+    {{if .Appetizers}}
+    Appetizers
+    {{range .Appetizers}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+    {{if .Entrees}}
+    Entrees
+    {{range .Entrees}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+    {{if .Drinks}}
+    Drinks
+    {{range .Drinks}}
+        {{.Name}} -- ${{.Price}}
+    {{end}}
+    {{end}}
+{{end}}
